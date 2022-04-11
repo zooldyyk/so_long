@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   map_errors.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eschmid <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: eschmid <marvin@42lausanne.ch>            +#+  +:+       +#+         */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 15:46:02 by rserafim          #+#    #+#             */
 /*   Updated: 2022/04/11 16:03:19 by rserafim         ###   ########.fr       */
