@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   key_event.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rserafim <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: eschmid <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 16:22:18 by rserafim          #+#    #+#             */
 /*   Updated: 2022/04/11 16:24:42 by rserafim         ###   ########.fr       */
