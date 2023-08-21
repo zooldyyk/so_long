@@ -1,2 +1,2 @@
 # so_long
-no finish
+not finish
