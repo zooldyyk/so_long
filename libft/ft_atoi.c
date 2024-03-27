@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                             :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eschmid <marvin@42lausanne.ch>             +#+  +:+       +#+        */
+/*   By: eschmid <marvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/10/11 17:03:41 by eschmid           #+#    #+#             */
-/*   Updated: 2021/10/29 15:44:51 by eschmid          ###   ########.fr       */
+/*   Created: 2022/05/17 12:13:29 by eschmid          #+#    #+#             */
+/*   Updated: 2022/05/17 12:14:06 by eschmid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,15 +25,15 @@ int	ft_atoi(const char *str)
 		i++;
 	if (str[i] == 45)
 	{
-        signe = -1;
+		signe = -1;
 		i++;
 	}
-    else if (str[i] == 43)
-        i++;
+	else if (str[i] == 43)
+		i++;
 	while (str[i] >= '0' && str[i] <= '9')
 	{
 		result = (str[i] - '0' + (result * 10));
-		i++;	
+		i++;
 	}
 	return (result * signe);
 }

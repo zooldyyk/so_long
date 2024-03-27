@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   fill_map.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eschmid <marvin@42lausanne.ch>             +#+  +:+       +#+        */
+/*   By: eschmid <marvin@student.42lausanne.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/11 16:09:26 by eschmid           #+#    #+#             */
-/*   Updated: 2022/04/11 16:14:14 by eschmid          ###   ########.fr       */
+/*   Updated: 2022/11/07 18:24:47 by eschmid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,21 +21,30 @@ void	ft_free(char *str)
 		free(&str[i]);
 }
 
-char	**maplloc(const char *arg)
+char	**maplloc(const char *arg, int y_size)
 {
 	int			fd;
 	char		**tab;
-	const char	*line;
-	const char	*save;
+	char	*line;
+	int i;
 
-	save = "";
+	i = 0;
+	tab = malloc (sizeof(char *) * y_size);
 	fd = open(arg, O_RDONLY);
 	line = get_next_line(fd);
-	while (line != NULL)
+	while (i < y_size)
 	{
-		line = ft_strjoin_char((char *)line, 'S');
-		save = ft_strjoin(save, line);
+		tab[i] = ft_strdup(line);
+		free (line);
 		line = get_next_line(fd);
-	}	
-	return (tab = ft_split(save, 'S'));
+		i++;
+	}
+	close (fd);
+	free (line);
+	//system("leaks so_long");
+	//free(save);
+	//system("leaks so_long");
+	//tab = ft_split(save, 'S');
+	//free (save);
+	return (tab);
 }

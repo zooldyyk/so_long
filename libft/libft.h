@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rafael <rafael@student.42.fr>              +#+  +:+       +#+        */
+/*   By: eschmid <marvin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/10/13 10:57:35 by eschmid           #+#    #+#             */
-/*   Updated: 2022/03/21 12:35:21 by rafael           ###   ########.fr       */
+/*   Updated: 2022/05/17 10:36:54 by eschmid         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -71,14 +71,14 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(f)(void *), void (*del)(void *));
 
-int        ft_printf(const char *format, ...);
-int        ft_formats(va_list args, const char format);
-int        ft_printchar(int c);
-int        ft_printstr(char *str);
-int        ft_print_ptr(unsigned long long ptr);
-int        ft_printnbr(int n);
-int        ft_print_unsigned(unsigned int n);
-int        ft_print_hex(unsigned int num, const char format);
-int        ft_printpercent(void);
+int		ft_printf(const char *format, ...);
+int		ft_formats(va_list args, const char format);
+int		ft_printchar(int c);
+int		ft_printstr(char *str);
+int		ft_print_ptr(unsigned long long ptr);
+int		ft_printnbr(int n);
+int		ft_print_unsigned(unsigned int n);
+int		ft_print_hex(unsigned int num, const char format);
+int		ft_printpercent(void);
 
 #endif
